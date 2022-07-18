@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/birutua">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/signupIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/signup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/bgBiruMuda"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgbirumuda"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signupIcon" />
+
+        <TextView
+            android:id="@+id/judulSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Buat Akun Baru"
+            android:textColor="@color/birutext"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signupIcon" />
+
+        <ImageView
+            android:id="@+id/bgPutih"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgputih"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judulSignup" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/edittext"
+            android:drawableLeft="@drawable/mail"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Alamat Email"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judulSignup" />
+
+        <EditText
+            android:id="@+id/etKatasandi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/edittext"
+            android:drawableLeft="@drawable/padlock"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Kata sandi"
+            android:password="true"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+        <EditText
+            android:id="@+id/etKonfirmasiKatasandi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/edittext"
+            android:drawableLeft="@drawable/padlock"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Konfirmasi kata sandi"
+            android:password="true"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etKatasandi" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/tombolbiru"
+            android:fontFamily="@font/poppinsmedium"
+            android:hint="DAFTAR"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etKonfirmasiKatasandi" />
+
+        <TextView
+            android:id="@+id/punyaakun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="66dp"
+            android:text="Sudah punya akun? Masuk"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColorHint="@color/black"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDaftar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

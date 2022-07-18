@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/birutua">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:clickable="true"
+            android:background="@drawable/backbtnlogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/loginIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/iconlogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/bgBiruMuda"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgbirumuda"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginIcon" />
+
+        <TextView
+            android:id="@+id/judulSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Masuk"
+            android:textColor="@color/birutext"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginIcon" />
+
+        <ImageView
+            android:id="@+id/bgPutih"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgputih"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judulSignup" />
+
+        <EditText
+            android:id="@+id/etEmaillogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/edittext"
+            android:drawableLeft="@drawable/mail"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Alamat Email"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judulSignup" />
+
+        <EditText
+            android:id="@+id/etKatasandilogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/edittext"
+            android:drawableLeft="@drawable/padlock"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Kata sandi"
+            android:password="true"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmaillogin" />
+
+        <TextView
+            android:id="@+id/lupaPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Lupa Password ?"
+            android:textColor="@color/birutua"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/etKatasandilogin"
+            app:layout_constraintTop_toBottomOf="@+id/etKatasandilogin" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/tombolbiru"
+            android:fontFamily="@font/poppinsmedium"
+            android:hint="MASUK"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lupaPassword" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
